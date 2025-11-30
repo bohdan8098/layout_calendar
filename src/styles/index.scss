@@ -2,7 +2,7 @@ $day-size: 98px;
 $border-width: 1px;
 $gap-size: 1px;
 $columns-count: 7;
-$padding-size: -1px;
+$padding-size: 5px;
 $day-total-width: $day-size + 2 * $border-width;
 $days-width: $day-total-width * $columns-count;
 $gaps-width: $gap-size * ($columns-count - 1);
@@ -29,8 +29,10 @@ body {
 }
 
 .calendar {
-  width: $calendar-max-content-width + 0 * $padding-size;
+  width: $calendar-max-content-width + 2 * $padding-size;
   padding: $padding-size;
+  margin-left: 10px;
+  margin-bottom: 10px;
 
   display: flex;
   flex-wrap: wrap;
